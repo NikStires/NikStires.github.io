@@ -102,6 +102,7 @@ nav {
     margin: 5px;
     transition: all 0.3 ease;
 }
+
 /* Header Showcase */
 
 #showcase {
@@ -257,12 +258,12 @@ nav {
 
   #showcase p{
       position: relative;
-      left: 0;
+      padding-left: 0;
       top: 100px;
   }
 
   .btn {
-      top: 300px;
+      top: 250px;
   }
 
   #section-a .content-text {
