@@ -129,6 +129,8 @@ nav {
 
 #showcase p {
     position: relative;
+    padding-left: 200px;
+    top: 200px;
     font-size: 2.5em;
     text-align: left;
 }
@@ -241,6 +243,24 @@ nav {
   .grid {
     display: grid;
     grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
+  }
+
+  #showcase {
+      min-height: 750px;
+  }
+
+  #showcase .bg-image {
+      height: 800px;
+  }
+
+  #showcase p{
+      position: relative;
+      left: 0;
+      top: 100px;
+  }
+
+  .btn {
+      top: 300px;
   }
 
   #section-a .content-text {
