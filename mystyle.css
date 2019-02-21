@@ -105,13 +105,15 @@ nav {
 /* Header Showcase */
 
 #showcase {
-  min-height: 1000px;
+  position: relative;
+  min-height: 100vh;
   color: #fff;
   text-align: center;
 }
 
 #showcase .bg-image {
   position: absolute;
+  height: 100vh;
   background: #333 url("head.jpg");
   background-position-x: 90%;
   background-repeat: no-repeat;
