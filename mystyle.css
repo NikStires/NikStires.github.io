@@ -266,7 +266,7 @@ nav {
   }
 
   #section-a .content-text {
-    columns: 2;
+    columns: 1;
     column-gap: 2em;
   }
 
@@ -293,8 +293,18 @@ nav {
   }
 
   #section-b li {
-    width: 31%;
+    width: 40%;
   }
+
+ /* footer */
+
+ .footer-social-links a{
+    padding-top: 20px;
+ }
+
+ .footer-social-links a:before{
+     margin-top: 20px;
+ }
 }
 
 .nav-active {
