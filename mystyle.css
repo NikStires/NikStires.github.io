@@ -35,6 +35,8 @@ p {
 }
 
 .btn {
+  position: relative;
+  top: 500px;
   display: inline-block;
   background: #333;
   color: #fff;
@@ -52,11 +54,14 @@ p {
 /* Navbar */
 
 nav {
+    position: fixed;
+    top: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 6vh;
     background-color: #333;
+    position: relative;
 }
 
 .logo {
@@ -81,7 +86,7 @@ nav {
     text-decoration: none;
     letter-spacing: 3px;
     font-weight: bold;
-    font size: 14px;
+    font-size: 14px;
 }
 
 .burger {
@@ -94,6 +99,7 @@ nav {
     height: 3px;
     background-color: rgb(226, 226, 226);
     margin: 5px;
+    transition: all 0.3 ease;
 }
 /* Header Showcase */
 
@@ -105,9 +111,8 @@ nav {
 
 #showcase .bg-image {
   position: absolute;
-  background: #333
-    url("head.jpg");
-  background-position: center;
+  background: #333 url("head.jpg");
+  background-position-x: 90%;
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
@@ -122,6 +127,7 @@ nav {
 }
 
 #showcase p {
+    position: relative;
     font-size: 2.5em;
     text-align: left;
 }
@@ -211,7 +217,7 @@ nav {
   .nav-links {
       position: absolute;
       right: 0px;
-      height: 92vh;
+      height: 103.3vh;
       top: 6vh;
       background-color: #333;
       display: flex;
@@ -222,33 +228,12 @@ nav {
       transition: trasform 0.5s ease-in;
   }
 
-  .burger {
-      display: block;
-  }
-
-  .nav-active {
-      transform: translateX(0%);
-  }
-
-  @@keyframes navLinkFade {
-      from{
-          opacity: 0;
-          transform: translateX(50px);
-      }
-      to{
-          opacity: 1;
-          transform: translateX(0px);
-      }
-  }
-
-  .toggle .line1 {
-      transform: rotate(-45deg traslate(-5px, 6px));
-  }
-  .toggle .line2 {
+  .navlinks li{
       opacity: 0;
   }
-  .toggle .line3 {
-      transform: rotate(45deg traslate(-5px, -6px));
+
+  .burger {
+      display: block;
   }
 
 /* grid */
@@ -287,4 +272,30 @@ nav {
   #section-b li {
     width: 31%;
   }
+}
+
+.nav-active {
+    transform: translateX(0%);
+        transition: transform 0.5s ease;
+}
+
+@@keyframes navLinkFade {
+    from {
+        opacity: 0;
+        transform: translateX(50px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+
+.toggle .line1 {
+    transform: rotate(-45deg) translate(-5px, 6px);
+}
+.toggle .line2 {
+    opacity: 0;
+}
+.toggle .line3 {
+    transform: rotate(45deg) translate(-5px, -6px);
 }
