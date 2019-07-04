@@ -172,6 +172,10 @@ nav {
   padding: 1.5em;
 }
 
+.card-title {
+    text-align: center;
+}
+
 /* Section C */
 
 #section-c {
@@ -298,6 +302,7 @@ nav {
   #section-b li {
     width: 40%;
   }
+
 
  /* footer */
 
