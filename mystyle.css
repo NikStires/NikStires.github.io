@@ -34,23 +34,6 @@ p {
   padding: 1em 0;
 }
 
-.btn {
-  position: relative;
-  top: 500px;
-  display: inline-block;
-  background: #333;
-  color: #fff;
-  text-decoration: none;
-  padding: 1em 2em;
-  border: 1px solid #666;
-  margin: 0.5em 0;
-}
-
-.btn:hover {
-  background: #eaeaea;
-  color: #333;
-}
-
 /* Navbar */
 
 nav {
@@ -152,7 +135,7 @@ nav {
 /* Section B */
 
 #section-b {
-  padding: 2em 1em 1em;
+  padding: 1em 1em 1em;
   background: #333;
 }
 
@@ -163,7 +146,6 @@ nav {
 }
 
 #section-b li {
-  margin-bottom: 1em;
   background: #fff;
   color: #333;
 }
@@ -175,6 +157,34 @@ nav {
 .card-title {
     text-align: center;
 }
+
+/* photos */
+.photos {
+    padding: 5px;
+    background: white;
+}
+
+.row {
+    display: -ms-flexbox; /* IE10 */
+    display: flex;
+    -ms-flex-wrap: wrap; /* IE10 */
+    flex-wrap: wrap;
+    padding: 0 4px;
+}
+
+.column {
+    -ms-flex: 25%; /* IE10 */
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+}
+
+.column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    transition: transform .2s;
+}
+
 
 /* Section C */
 
@@ -238,44 +248,40 @@ nav {
       width: 50%;
       transform: translateX(100%);
       transition: trasform 0.5s ease-in;
-  }
+    }
 
   .navlinks li{
       opacity: 0;
-  }
+    }
 
   .burger {
       display: block;
-  }
+    }
 
 /* grid */
   .grid {
     display: grid;
     grid-template-columns: 1fr repeat(2, minmax(auto, 25em)) 1fr;
-  }
+     }
 
   #showcase {
       min-height: 750px;
-  }
+    }
 
   #showcase .bg-image {
       height: 800px;
-  }
+    }
 
   #showcase p{
       position: relative;
       padding-left: 0;
       top: 100px;
-  }
-
-  .btn {
-      top: 250px;
-  }
+    }
 
   #section-a .content-text {
     columns: 1;
     column-gap: 2em;
-  }
+    }
 
   #section-a .content-text p {
     padding-top: 0;
@@ -292,7 +298,7 @@ nav {
 
   #main-footer div {
       grid-column: span 2/4;
-  }
+    }
 
   #section-b ul {
     display: flex;
@@ -300,7 +306,7 @@ nav {
   }
 
   #section-b li {
-    width: 40%;
+    width: 100%;
   }
 
 
@@ -320,7 +326,7 @@ nav {
         transition: transform 0.5s ease;
 }
 
-@@keyframes navLinkFade {
+@keyframes navLinkFade {
     from {
         opacity: 0;
         transform: translateX(50px);
