@@ -120,7 +120,7 @@ nav {
   background-repeat: no-repeat;
   background-size: cover;
   width: 100%;
-  height: 1200px;
+  height: 1100px;
   z-index: -1;
 }
 
@@ -179,6 +179,9 @@ nav {
   color: #333;
   padding: 2em;
 }
+
+/* Section B / slideshow */
+
 
 /* Section D / Boxes */
 
