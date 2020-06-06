@@ -157,6 +157,10 @@ nav {
     text-align: center;
 }
 
+.noHover{
+  pointer-events: none;
+}
+
 /* photography */
 
 .portfolio {
@@ -170,14 +174,15 @@ nav {
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
-    padding: 0 4px;
+    padding: 4px;
+    justify-content: center;
 }
 
 .column {
     -ms-flex: 25%; /* IE10 */
     flex: 25%;
     max-width: 25%;
-    padding: 0 4px;
+    padding: 4px;
 }
 
 .column img {
