@@ -18,8 +18,8 @@ body {
 
 img {
   display: block;
-  width: 100%;
   height: auto;
+  image-orientation: from-image;
 }
 
 h1,
@@ -38,13 +38,13 @@ p {
 
 nav {
     position: fixed;
+    width: 100%;
     top: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
     min-height: 6vh;
     background-color: #333;
-    position: relative;
     z-index: +1;
 }
 
@@ -158,10 +158,16 @@ nav {
     text-align: center;
 }
 
-/* photos */
-.photos {
-    padding: 5px;
+.noHover{
+  pointer-events: none;
+}
+
+/* photography */
+
+.portfolio {
+    padding-top: 20px;
     background: white;
+    padding-bottom: 20px;
 }
 
 .row {
@@ -169,14 +175,15 @@ nav {
     display: flex;
     -ms-flex-wrap: wrap; /* IE10 */
     flex-wrap: wrap;
-    padding: 0 4px;
+    padding: 4px;
+    justify-content: center;
 }
 
 .column {
     -ms-flex: 25%; /* IE10 */
     flex: 25%;
     max-width: 25%;
-    padding: 0 4px;
+    padding: 4px;
 }
 
 .column img {
@@ -185,6 +192,10 @@ nav {
     transition: transform .2s;
 }
 
+.column img:hover {
+    transform: scale(1.5);
+    z-index: +2;
+}
 
 /* Section C */
 
@@ -245,9 +256,10 @@ nav {
       display: flex;
       flex-direction: column;
       align-items: center;
-      width: 50%;
+      width: 100%;
       transform: translateX(100%);
-      transition: trasform 0.5s ease-in;
+      transition: transform 0.5s ease-in;
+      opacity: 0;
     }
 
   .navlinks li{
@@ -309,6 +321,7 @@ nav {
     width: 100%;
   }
 
+ /* portfolios */
 
  /* footer */
 
@@ -323,7 +336,8 @@ nav {
 
 .nav-active {
     transform: translateX(0%);
-        transition: transform 0.5s ease;
+    transition: transform 0.5s ease;
+    opacity: 1;
 }
 
 @keyframes navLinkFade {
